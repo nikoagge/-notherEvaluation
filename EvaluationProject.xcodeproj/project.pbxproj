@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		17DCB8652432571300658375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCB8642432571300658375 /* AppDelegate.swift */; };
 		17DCB8672432571300658375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCB8662432571300658375 /* SceneDelegate.swift */; };
-		17DCB8692432571300658375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCB8682432571300658375 /* ViewController.swift */; };
-		17DCB86C2432571300658375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DCB86A2432571300658375 /* Main.storyboard */; };
+		17DCB8692432571300658375 /* ChessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCB8682432571300658375 /* ChessController.swift */; };
 		17DCB86E2432571600658375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DCB86D2432571600658375 /* Assets.xcassets */; };
 		17DCB8712432571600658375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DCB86F2432571600658375 /* LaunchScreen.storyboard */; };
+		17F1C28F24334F07006C8854 /* BoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1C28E24334F07006C8854 /* BoardCell.swift */; };
+		17F1C2912433628D006C8854 /* BoardCellService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1C2902433628D006C8854 /* BoardCellService.swift */; };
+		17F1C293243365C1006C8854 /* BoardIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1C292243365C1006C8854 /* BoardIndex.swift */; };
+		17F2F77B24349255008730E1 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2F77A24349255008730E1 /* History.swift */; };
+		17F2F77D243496B3008730E1 /* ChessPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2F77C243496B3008730E1 /* ChessPiece.swift */; };
+		17F2F77F2434C294008730E1 /* ChessBoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2F77E2434C294008730E1 /* ChessBoardService.swift */; };
+		17F2F7812434C37D008730E1 /* ChessBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F2F7802434C37D008730E1 /* ChessBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17DCB8612432571300658375 /* EvaluationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaluationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DCB8642432571300658375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17DCB8662432571300658375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		17DCB8682432571300658375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17DCB86B2432571300658375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17DCB8682432571300658375 /* ChessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessController.swift; sourceTree = "<group>"; };
 		17DCB86D2432571600658375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DCB8702432571600658375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DCB8722432571600658375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F1C28E24334F07006C8854 /* BoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCell.swift; sourceTree = "<group>"; };
+		17F1C2902433628D006C8854 /* BoardCellService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCellService.swift; sourceTree = "<group>"; };
+		17F1C292243365C1006C8854 /* BoardIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardIndex.swift; sourceTree = "<group>"; };
+		17F2F77A24349255008730E1 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		17F2F77C243496B3008730E1 /* ChessPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessPiece.swift; sourceTree = "<group>"; };
+		17F2F77E2434C294008730E1 /* ChessBoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardService.swift; sourceTree = "<group>"; };
+		17F2F7802434C37D008730E1 /* ChessBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,101 @@
 		17DCB8632432571300658375 /* EvaluationProject */ = {
 			isa = PBXGroup;
 			children = (
-				17DCB8642432571300658375 /* AppDelegate.swift */,
-				17DCB8662432571300658375 /* SceneDelegate.swift */,
-				17DCB8682432571300658375 /* ViewController.swift */,
-				17DCB86A2432571300658375 /* Main.storyboard */,
-				17DCB86D2432571600658375 /* Assets.xcassets */,
-				17DCB86F2432571600658375 /* LaunchScreen.storyboard */,
-				17DCB8722432571600658375 /* Info.plist */,
+				17F1C28924334AE0006C8854 /* Chess */,
+				17DCB87824325DE200658375 /* Global */,
 			);
 			path = EvaluationProject;
+			sourceTree = "<group>";
+		};
+		17DCB87824325DE200658375 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				17DCB87C24325DF800658375 /* Model */,
+				17DCB87B24325DF500658375 /* View */,
+				17DCB87A24325DEE00658375 /* Controller */,
+				17DCB87924325DE800658375 /* Service */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		17DCB87924325DE800658375 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17DCB8722432571600658375 /* Info.plist */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17DCB87A24325DEE00658375 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17DCB8642432571300658375 /* AppDelegate.swift */,
+				17DCB8662432571300658375 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17DCB87B24325DF500658375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17DCB86D2432571600658375 /* Assets.xcassets */,
+				17DCB86F2432571600658375 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17DCB87C24325DF800658375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17F1C28924334AE0006C8854 /* Chess */ = {
+			isa = PBXGroup;
+			children = (
+				17F1C28D24334AFA006C8854 /* Model */,
+				17F1C28C24334AF3006C8854 /* View */,
+				17F1C28B24334AED006C8854 /* Controller */,
+				17F1C28A24334AE8006C8854 /* Service */,
+			);
+			path = Chess;
+			sourceTree = "<group>";
+		};
+		17F1C28A24334AE8006C8854 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17F1C2902433628D006C8854 /* BoardCellService.swift */,
+				17F1C292243365C1006C8854 /* BoardIndex.swift */,
+				17F2F77A24349255008730E1 /* History.swift */,
+				17F2F77C243496B3008730E1 /* ChessPiece.swift */,
+				17F2F77E2434C294008730E1 /* ChessBoardService.swift */,
+				17F2F7802434C37D008730E1 /* ChessBoard.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		17F1C28B24334AED006C8854 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17DCB8682432571300658375 /* ChessController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17F1C28C24334AF3006C8854 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17F1C28E24334F07006C8854 /* BoardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17F1C28D24334AFA006C8854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +225,6 @@
 			files = (
 				17DCB8712432571600658375 /* LaunchScreen.storyboard in Resources */,
 				17DCB86E2432571600658375 /* Assets.xcassets in Resources */,
-				17DCB86C2432571300658375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +235,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DCB8692432571300658375 /* ViewController.swift in Sources */,
+				17F1C2912433628D006C8854 /* BoardCellService.swift in Sources */,
+				17DCB8692432571300658375 /* ChessController.swift in Sources */,
+				17F2F77B24349255008730E1 /* History.swift in Sources */,
 				17DCB8652432571300658375 /* AppDelegate.swift in Sources */,
+				17F1C28F24334F07006C8854 /* BoardCell.swift in Sources */,
 				17DCB8672432571300658375 /* SceneDelegate.swift in Sources */,
+				17F2F77F2434C294008730E1 /* ChessBoardService.swift in Sources */,
+				17F1C293243365C1006C8854 /* BoardIndex.swift in Sources */,
+				17F2F77D243496B3008730E1 /* ChessPiece.swift in Sources */,
+				17F2F7812434C37D008730E1 /* ChessBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17DCB86A2432571300658375 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17DCB86B2432571300658375 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17DCB86F2432571600658375 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = EvaluationProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EvaluationProject/Global/Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = EvaluationProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EvaluationProject/Global/Service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
